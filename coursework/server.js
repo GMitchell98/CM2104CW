@@ -34,6 +34,13 @@ app.get('/login', function(req, res) {
 app.get('/about', function(req, res) {
   res.render('about');
 });
+//log out route
+app.get('/logout', function(req, res) {
+  req.session.loggedin = false;
+  req.session.destroy();
+   console.log('logged out');
+  res.redirect('/');
+});
 
 
 
