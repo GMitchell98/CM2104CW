@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/1.2.7/spin.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="login.css">
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+   <title>
+     Pick your Poison
+   </title>
+</head>
+<body class="bg">
+
+  <script src="main.js"> </script>
+  <header id="MainHeader">
+    <%- include('partials/header') %>
+  </header>
+  <div class="login-page">
+<div class="form">
+  <!--placeholder form for a user to get registered-->
+  <form action="/login" method="POST" class="register-form">
+
+<input name="username" type="text" placeholder="Username"/>
+<input name="email" type="text" placeholder="Email address"/>
+<input name="password" type="password" placeholder="Password"/>
+<button type="submit">Create</button>
+<p class="message">Already Registered?<a href="#"><u>Login</u></a>
+</P>
+  </form>
+  <!--placeholder form for a returning user to login-->
+  <form action="/dologin" method="POST" class="login-form">
+<img id="loginLogo" src="C:\Users\alast\github\Pick-your-Poison\IMAGES\LOGOS\PICK_YOUR_POISON_LOGO_WHITE_FULL.png">
+<input name="username" type="text" placeholder="Username"/>
+<input name="password" type="password" placeholder="Password"/>
+<button type="submit">Login</button>
+<p class="message">Not Registered?<a href="#"><u>Register</u></a>
+</P>
+  </form>
+</div>
+  </div>
+  <footer>
+     <%- include('partials/footer') %>
+      </footer>
+  <script>
+  $('.message a').click(function(){
+    $('form').animate({height:"toggle", opacity: "toggle"}, "slow");
+  });
+  </script>
+</body>
+</html>
