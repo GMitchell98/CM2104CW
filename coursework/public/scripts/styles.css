@@ -130,6 +130,87 @@ p3{
   //padding-right: 0px;
 }
 
+/*Login*/
+
+.bg{
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("HOME_IMAGE_2.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-page{
+  width:360px;
+  padding:10% 0 0;
+  margin:auto;
+}
+
+a#active{
+  color: lightgreen;
+}
+
+#loginLogo{
+  width: 150px;
+  height: 150px;
+}
+
+.form{
+  position:relative;
+  z-index:1;
+  background:rgba(52,58,64,0.5);
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+}
+
+.form input{
+  font-family: sans-serif;
+  outline: 1;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button{
+  font-family: sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form button:hover, .form button:active{
+  background: #43A047;
+}
+
+.form .message{
+  margin: 15px 0 0;
+  color: black ;
+  font-size: 20px;
+
+}
+
+.form .message a{
+  color:#4CAF50;
+  text-decoration: none;
+}
+
+.form .register-form{
+  display: none;
+}
+
+
 /*footer*/
 
 #footer-info{
