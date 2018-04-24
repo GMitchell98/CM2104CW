@@ -6,9 +6,49 @@
 
   <script src="scripts/main.js"> </script>
 
-  <%- include('partials/navbar') %>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="/">Pick your Poison</a>
 
-  <img src ="coursework\public\Images\HOME_IMAGE_2.jpg">
+    <!-- Collapse button-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/profile">Profile</a>
+        </li>
+
+      </ul>
+      <form action="/logout" method="POST">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+      </form>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input id="sbar"class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button id="drinkSearch"class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+
 
 
   <div id="mainPage" class="container">
