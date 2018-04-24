@@ -119,7 +119,7 @@ $(document).ready(function(){
       top: 40, // Top position relative to parent in px
       left: 25 // Left position relative to parent in px
     };
-    var target = document.getElementById('placeholderDiv');
+    var target = document.getElementById('ing');
     var spinner = new Spinner(opts).spin(target);
 
     //clear the placeholder items before populating the results
