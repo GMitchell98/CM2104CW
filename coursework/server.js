@@ -1,5 +1,7 @@
+//Add mongo DB and connect to profile path
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017/profiles";
+//Express setup
 const express = require('express');
 const app = express();
 const session = require('express-session');
