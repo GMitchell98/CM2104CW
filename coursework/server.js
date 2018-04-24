@@ -34,6 +34,10 @@ app.get('/login', function(req, res) {
 app.get('/about', function(req, res) {
   res.render('about');
 });
+//profile route
+app.get('/profile', function(req, res) {
+  res.render('profile');
+});
 //log out route
 app.get('/logout', function(req, res) {
   req.session.loggedin = false;
