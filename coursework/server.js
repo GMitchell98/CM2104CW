@@ -39,7 +39,7 @@ app.get('/profile', function(req, res) {
   res.render('profile');
 });
 //log out route
-app.get('/logout', function(req, res) {
+app.post('/logout', function(req, res) {
   req.session.loggedin = false;
   req.session.destroy();
    console.log('logged out');
