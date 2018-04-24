@@ -7,7 +7,7 @@ h2{
 }
 
 .bg {
-  background-image: url("HOME_IMAGE_2.jpg");
+  background-image: url("/Images/HOME_IMAGE_2.jpg"");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
