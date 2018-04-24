@@ -170,7 +170,6 @@ function addIngredientBox(){
       * @property {string} idDrink
       */
       success: function (response) {
-        console.log(response);
         var res = JSON.parse(JSON.stringify(response));
 
         //If results are found create and populate card for each drink
