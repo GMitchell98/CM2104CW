@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     //to return box contents
     function getSearchBox(){
-      var userInput = document.getElementById('ing');
+      var userInput = document.getElementById('ing').value;
       return userInput;
     }
 
@@ -121,12 +121,10 @@ $(document).ready(function(){
     //clear the placeholder items before populating the results
     $('.placeholder').remove();
 
-    //Use the split function to separate the ingredients
-    //and apply each ingredient in case of multiple ingredient search
-    for (var j= 0; j < searchterms.length -1; j++){
+
       //alert("Item from search: " + searchterms[j]);
     $.ajax({
-      url:"https://www.thecocktaildb.com/api/json/v1/1/filter.php?i="+searchterms[j],
+      url:"https://www.thecocktaildb.com/api/json/v1/1/filter.php?i="+ userInput,
       type: "GET",
       data:{key: "1", q: search.slice(0, -1)},
       dataType: "json",
