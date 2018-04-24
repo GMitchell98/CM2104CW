@@ -121,7 +121,7 @@ $(document).ready(function(){
     //clear the placeholder items before populating the results
     $('.placeholder').remove();
 
-
+      var userInput = document.getElementById('ing').value;
       //alert("Item from search: " + searchterms[j]);
     $.ajax({
       url:"https://www.thecocktaildb.com/api/json/v1/1/filter.php?i="+ userInput,
