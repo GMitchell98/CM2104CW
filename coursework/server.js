@@ -9,7 +9,7 @@ const bodyParser = require('body-parser');
 
 app.use(session({ secret: 'example' }));
 
-app.use('/assets', express.static('assets'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.urlencoded({
   extended: true
