@@ -160,7 +160,6 @@ $(document).ready(function(){
     }
   });
 
-} //closing the for loop for searchterms
 }
 
 /*end function*/
