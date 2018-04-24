@@ -1,15 +1,11 @@
 $(document).ready(function(){
   //Search results hidden on page load
   //Add ingredient box on load
-    addIngredientBox();
     $("#resultsbox").toggle(false);
 
     //to return box contents
     function getSearchBox(){
-      var userInput="";
-      $(".form-wrapper input").each(function(){
-        userInput+=$(this).val()+',';
-      });
+      var userInput = document.getElementById('ing');
       return userInput;
     }
 
@@ -119,7 +115,7 @@ $(document).ready(function(){
       top: 40, // Top position relative to parent in px
       left: 25 // Left position relative to parent in px
     };
-    var target = document.getElementById('ing');
+    var target = document.getElementById('placeholderDiv');
     var spinner = new Spinner(opts).spin(target);
 
     //clear the placeholder items before populating the results
