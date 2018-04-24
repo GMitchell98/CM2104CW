@@ -143,7 +143,6 @@ $(document).ready(function(){
             var strDrinkThumb = res.drinks[i].strDrinkThumb;
             var idDrink = res.drinks[i].idDrink;
             //alert("Drink= "+idDrink + " image is " + strDrinkThumb);
-            console.log(strDrink);
             createCard(strDrink, strDrinkThumb, idDrink);
           }
           //If no results returned display message and load most popular drinks instead
