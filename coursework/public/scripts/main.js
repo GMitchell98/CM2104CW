@@ -1,6 +1,6 @@
-//Search results hidden on page load
-//Add ingredient box on load
 $(document).ready(function(){
+  //Search results hidden on page load
+  //Add ingredient box on load
     addIngredientBox();
     $("#resultsbox").toggle(false);
 
