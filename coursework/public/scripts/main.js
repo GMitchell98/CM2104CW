@@ -141,7 +141,9 @@ $(document).ready(function(){
           for (var i = 0; i < res.drinks.length; i++) {
             var strDrink = res.drinks[i].strDrink;
             var strDrinkThumb = res.drinks[i].strDrinkThumb;
-            createCard(strDrink, strDrinkThumb);
+            var idDrink = res.drinks[i].idDrink;
+            //alert("Drink= "+idDrink + " image is " + strDrinkThumb);
+            createCard(strDrink, strDrinkThumb, idDrink);
           }
           //If no results returned display message and load most popular drinks instead
         } else if (res.drinks.length == 0) {
