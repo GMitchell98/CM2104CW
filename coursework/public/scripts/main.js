@@ -143,7 +143,7 @@ $(document).ready(function(){
             var strDrinkThumb = res.drinks[i].strDrinkThumb;
             var idDrink = res.drinks[i].idDrink;
             //alert("Drink= "+idDrink + " image is " + strDrinkThumb);
-            createCard(strDrink, strDrinkThumb, idDrink);
+            createCard(strDrink, strDrinkThumb);
           }
           //If no results returned display message and load most popular drinks instead
         } else if (res.drinks.length == 0) {
