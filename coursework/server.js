@@ -5,9 +5,11 @@ const app = express();
 const session = require('express-session');
 const bodyParser = require('body-parser');
 
+var path = require('path');
+
 app.use(session({ secret: 'example' }));
 
-app.use('/public', express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.urlencoded({
   extended: true
