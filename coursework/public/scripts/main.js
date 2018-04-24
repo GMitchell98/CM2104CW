@@ -123,7 +123,6 @@ $(document).ready(function(){
 
     //Use the split function to separate the ingredients
     //and apply each ingredient in case of multiple ingredient search
-    var searchterms = search.split(",");
     for (var j= 0; j < searchterms.length -1; j++){
       //alert("Item from search: " + searchterms[j]);
     $.ajax({
