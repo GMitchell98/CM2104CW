@@ -26,6 +26,7 @@ $(document).ready(function(){
 
 //Code executed when button is clicked
   $('#drinkSearch').click(function(){
+    console.log("this works");
     //Gather searchterms
     var word = document.getElementById("sbar").value;
     //Show results div, hide default main page
