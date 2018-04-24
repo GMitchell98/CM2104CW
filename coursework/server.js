@@ -9,13 +9,15 @@ var path = require('path');
 
 app.use(session({ secret: 'example' }));
 
-app.use(express.static(path.join(__dirname, 'public')));
+
 
 app.use(bodyParser.urlencoded({
   extended: true
 }))
 // set the view engine to ejs
 app.set('view engine', 'ejs');
+
+app.use(express.static(__dirname + '/public'));
 
 var db;
 
