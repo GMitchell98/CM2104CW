@@ -6,6 +6,10 @@ h2{
   background-color: white;
 }
 
+#colorTest{
+  color: red;
+}
+
 .bg {
   background-image: url("/Images/HOME_IMAGE_2.jpg"");
   height: 100%;
