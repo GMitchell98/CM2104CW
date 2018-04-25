@@ -58,6 +58,10 @@ h2{
   margin-bottom:7%;
 }
 
+#inputTitle{
+  color:white;
+}
+
 #leftsection{
   position: fixed;
   top: 100px;
@@ -69,7 +73,6 @@ h2{
   padding: 15px;
   //margin-left: 5%;
   background-color:rgb(52,58,64) ;
-  text-decoration-color: white;
   overflow:auto;
   max-height: 450px;
   max-width: 300px;
