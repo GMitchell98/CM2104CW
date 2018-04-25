@@ -44,8 +44,13 @@ app.get('/about', function(req, res) {
 });
 
 app.get('/users', function(req, res) {
-  res.render('users');
-});
+   db.collection('people').find().toArray(function(err, result) {
+    if (err) throw err;
+    //the result of the query is sent to the users page as the "users" array
+    res.render('pages/users', {
+      users: result
+    })
+  });
 
 app.get('/profile', function(req, res) {
   if(!req.session.loggedin){res.redirect('/login');return;}
