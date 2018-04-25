@@ -51,7 +51,7 @@ app.get('/profile', function(req, res) {
   //this query finds the first document in the array with that username.
   //Because the username value sits in the login section of the user data we use login.username
   db.collection('people').findOne({
-    "login.username": uname
+    "username": uname
   }, function(err, result) {
     if (err) throw err;
     console.log(uname+ ":" + result);
@@ -77,7 +77,7 @@ app.post('/dologin', function(req, res) {
   var uname = req.body.username;
   var pword = req.body.password;
 
-  db.collection('people').findOne({"login.username":uname}, function(err, result) {
+  db.collection('people').findOne({"username":uname}, function(err, result) {
     if (err) throw err;//if there is an error, throw the error
     //if there is no result, redirect the user back to the login system as that username must not exist
     if(!result){res.redirect('/login');return}
@@ -93,7 +93,7 @@ app.post('/login', function(req, res) {
   //we create the data string from the form components that have been passed in
 
 var datatostore = {
-"login":{"username":req.body.username,"email":req.body.email, "password":req.body.password}
+"username":req.body.username,"email":req.body.email, "password":req.body.password
 }
 
 
