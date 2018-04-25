@@ -77,7 +77,7 @@ app.post('/dologin', function(req, res) {
   var uname = req.body.username;
   var pword = req.body.password;
 
-  db.collection('people').findOne({"username":uname}, function(err, result) {
+  db.collection('people').findOne({"login.username":uname}, function(err, result) {
     if (err) throw err;//if there is an error, throw the error
     //if there is no result, redirect the user back to the login system as that username must not exist
     if(!result){res.redirect('/login');return}
@@ -93,9 +93,8 @@ app.post('/login', function(req, res) {
   //we create the data string from the form components that have been passed in
 
 var datatostore = {
-"username":req.body.username,
- "email":req.body.email,
-  "password":req.body.password}
+"login":{"username":req.body.username,"email":req.body.email, "password":req.body.password}
+}
 
 
 
@@ -103,7 +102,7 @@ var datatostore = {
   db.collection('people').save(datatostore, function(err, result) {
     if (err) throw err;
     console.log('saved to database')
-    //when complete redirect to the index
+    //when complete redirect to the login
     res.redirect('/login')
   })
 });
