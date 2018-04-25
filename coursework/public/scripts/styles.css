@@ -68,7 +68,7 @@ h2{
   float:left;
   padding: 15px;
   //margin-left: 5%;
-  background-color: black;
+  background-color:#f2f2f2 ;
   overflow:auto;
   max-height: 450px;
   max-width: 300px;
