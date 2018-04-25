@@ -93,8 +93,9 @@ app.post('/login', function(req, res) {
   //we create the data string from the form components that have been passed in
 
 var datatostore = {
-"username":req.body.username,"email":req.body.email, "password":req.body.password
-}
+"username":req.body.username,
+ "email":req.body.email,
+  "password":req.body.password}
 
 
 
@@ -102,7 +103,7 @@ var datatostore = {
   db.collection('people').save(datatostore, function(err, result) {
     if (err) throw err;
     console.log('saved to database')
-    //when complete redirect to the login
+    //when complete redirect to the index
     res.redirect('/login')
   })
 });
