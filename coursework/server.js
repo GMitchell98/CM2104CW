@@ -93,7 +93,7 @@ app.post('/login', function(req, res) {
   //we create the data string from the form components that have been passed in
 
 var datatostore = {
-"name":req.body.username,
+"username":req.body.username,
  "email":req.body.email,
   "password":req.body.password}
 
