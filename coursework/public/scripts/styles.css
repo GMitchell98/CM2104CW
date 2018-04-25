@@ -68,7 +68,7 @@ h2{
   float:left;
   padding: 15px;
   //margin-left: 5%;
-  background-color:#343A40 ;
+  background-color:rgba(52,58,64,0.5) ;
   overflow:auto;
   max-height: 450px;
   max-width: 300px;
@@ -227,7 +227,7 @@ a#active{
    text-align: center;
    color: #ffffff;
    width: 100%;
-   background-color:rgba(52,58,64,.7);
+   background-color: #343a40;
    //padding: 60px 0px;
 }
 .btn-facebook{
