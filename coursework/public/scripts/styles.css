@@ -213,7 +213,7 @@ a#active{
   text-align: center;
   color: #ffffff;
   width: 100%;
-  background-color: #343a40;
+  background-color:rgba(52,58,64,0.5);
 //  padding: 60px 0px;
 }
 .socials{
