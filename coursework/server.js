@@ -43,18 +43,21 @@ app.get('/about', function(req, res) {
   res.render('about');
 });
 
-//profile route
+app.get('/users', function(req, res) {
+  res.render('users');
+});
+
 app.get('/profile', function(req, res) {
   if(!req.session.loggedin){res.redirect('/login');return;}
   //get the requested user based on their username, eg /profile?username=dioreticllama
-  var uname =  req.query.username;
+  var uname = req.query.username;
   //this query finds the first document in the array with that username.
   //Because the username value sits in the login section of the user data we use login.username
   db.collection('people').findOne({
     "username": uname
   }, function(err, result) {
     if (err) throw err;
-    console.log(uname);
+    //console.log(uname+ ":" + result);
     //finally we just send the result to the user page as "user"
     res.render('profile', {
       user: result
