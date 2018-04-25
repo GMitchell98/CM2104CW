@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+  <% include ../partials/head %>
+</header>
+
+
+<body class="container">
+    <header>
+      <% include ../partials/header %>
+    </header>
+
+  <main>
+    <div class="jumbotron">
+      <!--page to display all the users-->
+      <h2>All Students</h2>
+
+          <ul>
+            <!-- for each user-->
+            <% users.forEach(function(user) { %>
+              <li>
+                <!-- create a link which directs to our /profile route and provides the username for tha user-->
+                <!-- display the users title, first and last name as the link text -->
+                <a href="/profile?username=<%= user.username %>"> <%= user.username+" %> </a>
+              </li>
+            <% }); %>
+          </ul>
+
+
+    </div>
+  </main>
+
+
+  <footer>
+    <% include ../partials/footer %>
+  </footer>
+
+</body>
+
+</html>
