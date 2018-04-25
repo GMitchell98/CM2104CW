@@ -56,7 +56,7 @@ app.get('/profile', function(req, res) {
     if (err) throw err;
     console.log(uname);
     //finally we just send the result to the user page as "user"
-    res.render('profile', {
+    res.render('profile?username=<%= user.username %>"', {
       user: result
     })
   });
