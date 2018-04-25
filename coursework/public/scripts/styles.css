@@ -227,7 +227,7 @@ a#active{
    text-align: center;
    color: #ffffff;
    width: 100%;
-   background-color: #rgba(52,58,64,.7);
+   background-color:rgba(52,58,64,.7);
    //padding: 60px 0px;
 }
 .btn-facebook{
