@@ -118,12 +118,11 @@ p3{
 }
 
 #StuffAboutTheWebsite{
-  //text-align:justify;
+
   text-justify: inter-word;
-  //height:50%;
+
   color:black;
-  //padding-left: 0px;
-  //padding-right: 0px;
+
 }
 
 /*Login*/
@@ -134,7 +133,7 @@ p3{
   margin:auto;
 }
 
-a#active{
+#active{
   color: lightgreen;
 }
 
