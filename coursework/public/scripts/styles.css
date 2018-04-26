@@ -93,6 +93,8 @@ body{
 }
 
 #howItWorks{
+  position: relative;
+  display: inline;
   color: white;
   text-align: center;
   margin-bottom: 20px;
