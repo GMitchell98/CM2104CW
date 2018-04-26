@@ -102,9 +102,7 @@ body{
   font-family: 'Montserrat' sans-serif;
 }
 
-.AboutParagraph{
-  text-decoration-color: white;
-}
+
 
 .container{
   background-position: center;
@@ -126,7 +124,7 @@ p3{
 
   text-justify: inter-word;
 
-  color:black;
+  color:white;
 
 }
 
