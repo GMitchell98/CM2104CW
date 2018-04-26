@@ -123,6 +123,8 @@ p3{
 #StuffAboutTheWebsite{
 
   text-justify: inter-word;
+  border-width: 5px;
+  border-style: double;
 
   color:white;
 
