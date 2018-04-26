@@ -85,17 +85,13 @@ body{
 }
 
 /*About Page*/
-#abouttitle{
+#titleAbout{
   text-align: center;
   color: white;
   margin-top: 150px;
   font-family: 'Montserrat thin' sans-serif;
 }
-#ARROW-01{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 #whatispyp{
   color: black;
   text-align: center;
