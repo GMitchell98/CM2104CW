@@ -102,7 +102,9 @@ body{
   font-family: 'Montserrat' sans-serif;
 }
 
-
+.AboutParagraph{
+  color: white;
+}
 
 .container{
   background-position: center;
