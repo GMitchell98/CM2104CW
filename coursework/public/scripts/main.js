@@ -16,7 +16,7 @@ $(document).ready(function(){
       searchApi(getSearchBox());
     });
 
-});
+
 
 
 
@@ -93,6 +93,7 @@ $(document).ready(function(){
 
       });
 
+  });
   });
 
 
