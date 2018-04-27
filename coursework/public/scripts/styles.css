@@ -13,6 +13,7 @@ h2{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow:auto;
 }
 
 #MainHeader{
@@ -57,7 +58,7 @@ h2{
 #leftsection{
   position: relative; //fixed;
   //top: 20%;
-  margin-top: 10%;
+  margin-top: 15%;
   //width: 35%;
   border-radius: 8px;
   line-height: 25px;
@@ -106,7 +107,7 @@ body{
   background-size: cover;
   width: 100%;
   height: 100%;
-  margin-top: 0px;
+  margin-top: 5%;
   margin-bottom: 120px;
 }
 
@@ -116,7 +117,7 @@ body{
   background-color: white;
   width: 100%;
   height: 100%;
-  margin-top: 0px;
+  margin-top: 5%;
   margin-bottom: 120px;
 }
 
@@ -126,11 +127,25 @@ body{
   text-align: center;
   font-weight: bold;
   font-size:20px;
+  width: 250px;
 
 }
+
+.p4{
+  height:200px;
+  width: 250px;
+  text-align: center;
+
+}
+
 .makeGreen{
   color: Green;
 }
+
+.fit-in{
+  margin-right: 25px;
+}
+
 #StuffAboutTheWebsite1,#StuffAboutTheWebsite2, #StuffAboutTheWebsite3 {
   //text-align:justify;
   text-justify: inter-word;
