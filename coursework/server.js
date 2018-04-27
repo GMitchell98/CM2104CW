@@ -59,7 +59,7 @@ app.get('/users', function(req, res) {
 });
 
 
-  
+
 app.get('/profile', function(req, res) {
   if(!req.session.loggedin){res.redirect('/login');return;}
   //get the requested user based on their username, eg /profile?username=dioreticllama
@@ -87,7 +87,6 @@ app.post('/logout', function(req, res) {
 });
 
 
-
 app.post('/dologin', function(req, res) {
   console.log(JSON.stringify(req.body))
   var uname = req.body.username;
@@ -111,8 +110,7 @@ app.post('/login', function(req, res) {
 var datatostore = {
 "username":req.body.username,
  "email":req.body.email,
- "password":req.body.password,
- "favdrink":req.body.favdrink}
+  "password":req.body.password}
 
 
 
