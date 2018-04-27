@@ -2,9 +2,7 @@ body, html {
   //height: 100%;
 }
 
-h2{
-  background-color: white;
-}
+
 
 
 .bg {
@@ -13,7 +11,6 @@ h2{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow:auto;
 }
 
 #MainHeader{
@@ -32,16 +29,24 @@ h2{
 
 #placeholderDiv{
   //position: fixed;
-  top: 5px;
+  top: 50px;
   margin-top: 2%;
-  //width: 35%;
+  width: 25%;
   border-radius: 8px;
-  line-height: 15px;
-  padding: 5px;
+  line-height: 25px;
+  padding: 15px;
   //margin-left: 5%;
   overflow:auto;
-  max-height: 450px;
+  max-height: 400px;
 // max-width: 600px;
+}
+
+
+@media screen and (min-width: 700px)
+#leftsection{
+  width:92%;
+  margin-bottom:10%;
+  margin-top:+15%;
 }
 
 
@@ -56,10 +61,10 @@ h2{
 }
 
 #leftsection{
-  position: relative; //fixed;
-  //top: 20%;
-  margin-top: 15%;
-  //width: 35%;
+  position: fixed;
+  top: 100px;
+  margin-top: 2%;
+  width: 25%;
   border-radius: 8px;
   line-height: 25px;
   float:left;
@@ -78,93 +83,63 @@ body{
 }
 
 /*About Page*/
-#abouttitle{
-  text-align: center;
-  color: black;
-  margin-top: 0px;
-  font-family: 'Montserrat thin' sans-serif;
-}
-#ARROW-01{
-  display: block;
-  margin-top: -30px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 #whatispyp{
-  color: black;
+  color: white;
   text-align: center;
-  margin-bottom: 2px;
-  margin-top: 2px;
+  margin-bottom: 20px;
+  margin-top: 15px;
   font-family: 'Montserrat' sans-serif;
 }
-#MainHeader{
-  color:white;
+
+#howItWorks{
+  position: relative;
+  display: inline;
+  color: white;
   text-align: center;
+  margin-bottom: 20px;
+  margin-top: 40PX;
+  font-family: 'Montserrat' sans-serif;
 }
+
+
 
 .container{
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-color: transparent;
   width: 100%;
   height: 100%;
-  margin-top: 5%;
-  margin-bottom: 120px;
+  margin-top: 50px;
+  margin-bottom: 200px;
 }
-
-.containerforabout{
-  background-position: center;
-  background-size: cover;
-  background-color: white;
-  width: 100%;
-  height: 100%;
-  margin-top: 5%;
-  margin-bottom: 120px;
-}
-
-.p3{
+p3{
 //  height:20%;
-  color: Green;
-  text-align: center;
-  font-weight: bold;
+  color: white;
   font-size:20px;
-  width: 250px;
 
 }
 
-.p4{
-  height:200px;
-  width: 250px;
-  text-align: center;
+#StuffAboutTheWebsite{
 
-}
-
-.makeGreen{
-  color: Green;
-}
-
-.fit-in{
-  margin-right: 25px;
-}
-
-#StuffAboutTheWebsite1,#StuffAboutTheWebsite2, #StuffAboutTheWebsite3 {
-  //text-align:justify;
   text-justify: inter-word;
-  //height:50%;
-  color:black;
-  //padding-left: 0px;
-  //padding-right: 0px;
+  border-width: 5px;
+  border-style: double;
+  border-color: black;
+
+  color:white;
+
 }
 
 /*Login*/
 
 .login-page{
   width:360px;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding:10% 0 0;
   margin:auto;
 }
 
-a#active{
+#active{
   color: lightgreen;
 }
 
@@ -178,8 +153,8 @@ a#active{
   z-index:1;
   background:rgba(52,58,64,0.5);
   max-width: 360px;
-//  margin: 0 auto 100px;
-  padding: 2%;
+  margin: 0 auto 100px;
+  padding: 45px;
   text-align: center;
 }
 
@@ -283,3 +258,48 @@ a#active{
   text-decoration: none;
   border: #217f56;
 }
+
+/* Smartphones (portrait and landscape) ---------- */
+ @media screen and (min-width: 320px) and (max-width: 480px){
+   [class*="col-"] {
+     width: 100%;
+   }
+
+ }
+ /* Smartphones (portrait) ---------- */
+ @media screen and (max-width: 320px){
+[class*="col-"] {
+  width: 100%;
+}
+ }
+ /* Smartphones (landscape) ---------- */
+ @media screen and (min-width: 321px){
+   [class*="col-"] {
+     width: 100%;
+   }
+ }
+ /* tablets, iPads (portrait and landscape) ---------- */
+ @media screen and (min-width: 768px) and (max-width: 1024px){
+   .col-md-4 {width: 25%};
+   .col-md-8 {width: 50%};
+ }
+ /* tablets, iPads (portrait) ---------- */
+ @media screen and (min-width: 768px){
+   .col-md-4 {width: 25%};
+   .col-md-8 {width: 50%};
+ }
+ /* tablets, iPads (landscape) ---------- */
+ @media screen and (min-width: 1024px){
+   .col-md-4 {width: 30%};
+   .col-md-8 {width: 60%};
+ }
+ /* Desktops and laptops ---------- */
+ @media screen and (min-width: 1224px){
+.col-md-4 {width: 35%};
+.col-md-8 {width: 65%};
+ }
+ /* Large screens ---------- */
+ @media screen and (min-width: 1824px){
+   .col-md-4 {width: 35%};
+   .col-md-8 {width: 65%};
+ }
